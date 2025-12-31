@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f0f4f8, #d9e2ec);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 95%;
+    max-width: 500px;
+    transition: background 0.3s, color 0.3s;
+}
+
+button#toggle-mode {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #6c757d;
+    color: white;
+    transition: 0.3s;
+}
+
+button#toggle-mode:hover {
+    background-color: #5a6268;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark-mode input, body.dark-mode select, body.dark-mode button {
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+body.dark-mode li.high { background-color: #e74c3c; }
+body.dark-mode li.medium { background-color: #e67e22; }
+body.dark-mode li.low { background-color: #27ae60; }
+
+body.dark-mode #export-pdf {
+    background-color: #17a2b8;
+}
